@@ -17,6 +17,4 @@ jobs:
   
       - name: 'Run az commands'
         run: |
-          az account show
-          az group list
-          pwd
+          az ad user list
