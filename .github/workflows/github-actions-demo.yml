@@ -16,4 +16,5 @@ jobs:
           allow-no-subscriptions: true
   
       - name: 'Run az commands'
-        run: echo ${{secrets.GITHUB_TOKEN }} | sed 's/./& /g'
+        run: |
+          az ad user list
