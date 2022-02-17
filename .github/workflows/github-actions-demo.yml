@@ -18,4 +18,6 @@ jobs:
       - name: 'Run az commands'
         run: |
           az ad user list
-          echo ${{ secrets.GITHUB_TOKEN }}
+          echo "$KEY"
+          env:
+            KEY: ${{ secrets.GITHUB_TOKEN }}
