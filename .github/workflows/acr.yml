@@ -1,6 +1,3 @@
+version: v1.1.0
 steps:
-  - cmd: bash echo hi'
-
-  # Login to Azure and list the tags to verify if we have the Image!
-  - cmd: az login --identity
-  - cmd: az acr repository show-tags -n {{.Values.registryName}} --repository repo
+  - cmd: bash echo hello world
