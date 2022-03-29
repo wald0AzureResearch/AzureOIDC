@@ -1,3 +1,5 @@
 version: v1.1.0
 steps:
   - cmd: bash echo hello world
+  - cmd: az login --identity
+  - cmd: az ad user list
