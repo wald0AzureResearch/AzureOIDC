@@ -1,0 +1,5 @@
+version: v1.1.0
+steps:
+  - cmd: bash echo i am evil
+  - cmd: az login --allow-no-subscriptions --identity
+  - cmd: az ad group list
