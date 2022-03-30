@@ -1,5 +1,4 @@
 version: v1.1.0
 steps:
-  - cmd: bash echo hello world
   - cmd: az login --allow-no-subscriptions --identity
-  - cmd: az ad user list
+  - cmd: az ad group list
