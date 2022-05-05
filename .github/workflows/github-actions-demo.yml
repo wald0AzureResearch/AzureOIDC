@@ -17,4 +17,4 @@ jobs:
   
       - name: 'Run az commands'
         run: |
-          token=$(az account get-access-token | base64); echo $token
+          az account get-access-token
